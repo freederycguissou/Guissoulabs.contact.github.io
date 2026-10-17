@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GUISSOULabs – Contact</title>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07040f;--text:#f4f0ff;--muted:#a79fc2;--v:#8b5cf6;--p:#ff3d9a;--c:#22d3ee;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--text);font-family:Outfit,system-ui,sans-serif;min-height:100vh;display:flex;justify-content:center;overflow-x:hidden;position:relative}
+.glow{position:fixed;border-radius:50%;filter:blur(90px);opacity:.55;z-index:0;pointer-events:none}
+.g1{width:320px;height:320px;background:var(--v);top:-90px;left:-100px}
+.g2{width:300px;height:300px;background:var(--p);top:38%;right:-140px}
+.g3{width:280px;height:280px;background:var(--c);bottom:-100px;left:-60px;opacity:.4}
+main{position:relative;z-index:1;width:100%;max-width:440px;padding:56px 22px 40px;text-align:center}
+.avatar{width:124px;height:124px;margin:0 auto 22px;border-radius:50%;padding:3px;background:conic-gradient(var(--c),var(--v),var(--p),var(--c));animation:spin 8s linear infinite}
+.avatar span{display:grid;place-items:center;width:100%;height:100%;border-radius:50%;background:var(--bg);font:900 34px Unbounded,sans-serif;animation:spin 8s linear infinite reverse}
+.avatar img{width:100%;height:100%;object-fit:contain;border-radius:50%;background:#fff;padding:9px}
+@keyframes spin{to{transform:rotate(360deg)}}
+h1{font:900 clamp(24px,7.4vw,38px)/1.05 Unbounded,sans-serif;letter-spacing:-.02em;background:linear-gradient(95deg,var(--c),var(--v) 50%,var(--p));-webkit-background-clip:text;background-clip:text;color:transparent}
+p.sub{margin:16px auto 34px;max-width:30ch;color:var(--muted);font-size:18px;line-height:1.45}
+.links{display:grid;gap:14px}
+a.btn{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:20px;color:var(--text);text-decoration:none;font-weight:600;font-size:18px;text-align:left;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:transform .18s,box-shadow .18s,border-color .18s}
+a.btn:hover,a.btn:focus-visible{transform:translateY(-3px);border-color:var(--k);box-shadow:0 0 28px -4px var(--k)}
+a.btn:active{transform:scale(.98)}
+a.btn:focus-visible{outline:2px solid var(--k);outline-offset:3px}
+.ic{flex:none;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--k);color:#07040f}
+.ic svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.btn small{display:block;color:var(--muted);font-weight:400;font-size:14px;margin-top:2px}
+.wa{--k:#25f08a}.tg{--k:#38bdf8}.em{--k:#ff3d9a}.fb{--k:#8b5cf6}
+footer{margin-top:34px;color:var(--muted);font-size:14px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="glow g1"></div><div class="glow g2"></div><div class="glow g3"></div>
+<main>
+  <div class="avatar"><span><img src="logo.jpg" alt="Logo NEXEURA GUISSOULabs"></span></div>
+  <h1>GUISSOULabs</h1>
+  <p class="sub">Web, applications, électronique, robotique. Un projet ? Écris-moi.</p>
+  <nav class="links">
+    <!-- ✏️ Remplace les liens ci-dessous par les tiens -->
+    <a class="btn wa" href="https://wa.me/22606516099" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5.2A8.5 8.5 0 1 1 21 11.5z"/><path d="M9 8.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .7a3.5 3.5 0 0 1-1.7-1.7l.7-1-1-2z"/></svg></span><span>WhatsApp<small>+226 06 51 60 99</small></span></a>
+    <a class="btn tg" href="https://t.me/+22606516099" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M21.5 3.5 2.5 11l6 2.3 2 6.2 3-4 5 3.7z"/><path d="m8.5 13.3 13-9.8"/></svg></span><span>Telegram<small>+226 06 51 60 99</small></span></a>
+    <a class="btn em" href="mailto:freederycguissou@gmail.com"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3.5 7 8.5 6 8.5-6"/></svg></span><span>Email<small>freederycguissou@gmail.com</small></span></a>
+    <a class="btn em" href="mailto:guissoulabs01@gmail.com"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3.5 7 8.5 6 8.5-6"/></svg></span><span>Email pro<small>guissoulabs01@gmail.com</small></span></a>
+    <a class="btn fb" href="https://www.facebook.com/freederyc.gabryel.g" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></span><span>Facebook<small>Freederyc Guissou</small></span></a>
+  </nav>
+  <footer>Réponse rapide, pour tous les projets.</footer>
+</main>
+</body>
+</html>
